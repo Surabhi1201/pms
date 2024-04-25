@@ -1,0 +1,38 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<!-- <header class="py-12 text-center bg-slate-200">
+    <h1 class="text-3xl">Welcome to Project Management System</h1>
+</header> -->
+
+
+<section class="container mx-auto px-6 p-10">
+    <h2 class="text-4xl font-bold text-center text-blue-700 mb-8">
+        Welcome to Project Management System
+    </h2>
+    <div class="flex items-center flex-wrap mb-20">
+      <div class="w-full md:w-1/2">
+        <h4 class="text-3xl text-blue-700 font-bold mb-3">Project</h4>
+        <p class="text-gray-600 mb-8">
+            A project is a temporary endeavor undertaken to create a unique product, service, or result. It is characterized by a defined beginning and end in terms of time, as well as specific objectives to be achieved within that timeframe. Projects are typically undertaken to bring about beneficial change or to add value to an organization, business, community, or individual.</p>
+      </div>
+      <div class="w-full md:w-1/2">
+        {% load static %}
+        <img src="{% static 'images/project.png' %}" alt="Project" />
+      </div>
+    </div>
+
+    <div class="flex items-center flex-wrap mb-20">
+      <div class="w-full md:w-1/2">
+        {% load static %}
+        <img src="{% static 'images/task.png' %}" alt="Task" />
+      </div>
+      <div class="w-full md:w-1/2 pl-10">
+        <h4 class="text-3xl text-blue-700 font-bold mb-3">Task</h4>
+        <p class="text-gray-600 mb-8">
+            A task is a specific and discrete piece of work that needs to be accomplished within a project or as part of ongoing operations. Tasks are smaller components of a project or larger goal, and they contribute to the overall achievement of objectives</p>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

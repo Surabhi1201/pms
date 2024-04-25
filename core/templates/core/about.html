@@ -1,0 +1,34 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+    <div class="mt-4 space-y-6">
+        <h2 class="text-xl text-blue-700 font-bold">Signup and Create Account:</h2>
+        <p>
+            Users can sign up for a new account by providing necessary information like name, email address, and password.
+            Upon successful signup, the user's account is created, and they are logged in automatically.
+        </p>
+        <h2 class="text-xl text-blue-700 font-bold">Login:</h2>
+        <p>
+            Users who already have an account can log in using their email address and password.
+            After successful login, users gain access to their dashboard and project management features.                
+        </p>
+        <h2 class="text-xl text-blue-700 font-bold">Dashboard:</h2>
+        <p>
+            The dashboard provides an overview of all the projects the user is involved in.
+            Users can see project summaries, no. of tasks on the dashboard.
+        </p>
+        <h2 class="text-xl text-blue-700 font-bold">Projects:</h2>
+        <p>
+            Projects can be edited, updated, and deleted as needed.
+            Each project has its own page where users can view and manage tasks related to that project.
+        </p>
+        <h2 class="text-xl text-blue-700 font-bold">Tasks:</h2>
+        <p>
+            Within each project, users can create tasks with titles, descriptions.
+            Tasks can be edited, updated, and deleted individually.
+            Users can mark tasks as done within the project.
+        </p>        
+    </div>
+
+{% endblock %}
